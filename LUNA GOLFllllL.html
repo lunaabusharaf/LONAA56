@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فندق للاستمتاع ـالقولف لعبتنا</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-shield-alt"></i> فندق لونا للقولف
+            </a>
+            <div class="datetime-display ms-2">
+                <span id="current-time"></span>
+                <span id="current-date"></span>
+                <span class="visitor-count">عدد الزيارات: <span id="visit-count">0</span></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">منتجاتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">نبذة عن الفندق</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">اتصل بنا</a>
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="#other-services">خدماتنا الأخرى</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <button id="toggle-vision-mode" class="btn btn-warning">وضع ضعاف البصر</button>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-md-6">
+                    <h1>LUNA GOLF</h1>
+                    <p class="lead"></p>موقع فندق لونا قولف الشهير لخدمتكم</p>
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        <i class="fas fa-phone-alt me-2"></i>
+                        اتصل بنا
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">نبذة عن الفندق</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="about-text" data-readable>
+                        <P>LUNA GOLF هو وجهة مثالية للمسافرين الذين يبحثون عن إقامة مريحة وأنيقة في البرتغال. يقع الفندق في البرتغال ويتميز بتقديم خدمة استثنائية وأجواء دافئة، ليكون المكان المثالي للاسترخاء والراحة. سواء كنت هنا للعمل أو للترفيه، ستجد لدينا كل ما تحتاجه من خدمات متكاملة مثل [ذكر بعض الخدمات مثل: غرف مجهزة بالكامل، خدمة الواي فاي، المطاعم، المرافق الرياضية، إلخ]. نحن نسعى جاهدين لضمان تجربة لا تُنسى لجميع ضيوفنا، ونوفر لهم كل ما يلزم لرحلة مميزة ومريحة في البرتغال</P>
+                       
+                    </div>
+                    <div class="text-controls mt-3">
+                        <button class="btn btn-primary me-2" onclick="toggleTextSize()">
+                            <i class="fas fa-text-height"></i> تكبير/تصغير النص
+                     
+                        </button>
+                        <button class="btn btn-secondary" onclick="readText(this.parentElement.previousElementSibling)">
+                            <i class="fas fa-volume-up"></i> قراءة النص
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="video-container">
+                    
+                        <iframe width="100%" height="315" 
+                            src="videoplayback (3).mp4" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="" data-readable>
+                        <h4>خدماتنا في فندق LUNA GOLF</h4>
+                        <ul>
+                            <li>غرف مجهزة بالكامل وخدمة واي فاي مجانية</li>
+                            <li>مطاعم متنوعة ومرافق رياضية.</li>
+                            <LI>تنظيم الجولات السياحية</LI>
+                            <li>خدمة على مدار الساعة</li>
+                            <li>رياضات متنوعة بما في ذلك الجولف.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">خدماتنا</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-search fa-3x mb-3"></i>
+                            <h3>موقع لونا للقولف </h3>
+                            <p>يمكنك رؤيةجميع خدماتنا عن طريق موقنا حتى يمكنك الحجز</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-camera fa-3x mb-3"></i>
+                            <h3> كاميرات فوتوغرافية</h3>
+                            <p>تم تعيين فوتوغرافيين في الفندق حتى تتمكن من مشاركة لحظاتك الجميلة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-tools fa-3x mb-3"></i>
+                            <h3>انظمة تصليحات</h3>
+                            <p>نقوم بعمل صيانة كلية وكاملة للالعاب والرياضات </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-clock fa-3x mb-3"></i>
+                            <h3>مراقبة 24/7</h3>
+                            <p>يمكنك الحجز في اي وقت او حتى القدوم في اي وقت  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Products Section -->
+    <section id="products" class="py-5">
+        <div class="container">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>خدماتنا - LUNA GOLF</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+            <link href="styles.css" rel="stylesheet">
+        </head>
+        <body>
+            <!-- القائمة العلوية -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">LUNA GOLF</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="services.html">خدماتنا</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="products.html">منتجاتنا</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">نبذة عنا</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">اتصل بنا</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+                  
+            <!-- محتوى الصفحة -->
+            <div class="container mt-5 pt-5">
+                <h1 class="text-center mb-5" data-readable>خدماتنا الأخرى</h1>
+                
+                <div class="row">
+                    <!-- خدمة تدريب الجولف -->
+                    <div class="col-md-6 mb-4">
+                        <div class="service-card card h-100" data-readable>
+                            <div class="card-body">
+                                <h3><i class="fas fa-golf-ball me-2"></i>دورات تدريبية في الجولف</h3>
+                                <ul>
+                                    <li>دروس مخصصة للمبتدئين والمحترفين</li>
+                                    <li>مدربون معتمدون</li>
+                                    <li>جلسات فردية أو جماعية</li>
+                                    <li>تحليل تقنيات اللعب</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- خدمة تأجير معدات الجولف -->
+                    <div class="col-md-6 mb-4">
+                        <div class="service-card card h-100" data-readable>
+                            <div class="card-body">
+                                <h3><i class="fas fa-golf-ball me-2"></i>تأجير معدات الجولف</h3>
+                                <ul>
+                                    <li>أحدث معدات الجولف</li>
+                                    <li>أندية جولف مخصصة حسب المقاس</li>
+                                    <li>حاويات وحقائب جولف عالية الجودة</li>
+                                    <li>خدمة تأجير مرنة</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- خدمة تنظيم البطولات -->
+                    <div class="col-md-6 mb-4">
+                        <div class="service-card card h-100" data-readable>
+                            <div class="card-body">
+                                <h3><i class="fas fa-trophy me-2"></i>تنظيم البطولات</h3>
+                                <ul>
+                                    <li>تنظيم بطولات تنافسية</li>
+                                    <li>جوائز قيمة</li>
+                                    <li>إدارة مهنية للفعاليات</li>
+                                    <li>مرافق حديثة ومجهزة</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- خدمة صيانة ملاعب الجولف -->
+                    <div class="col-md-6 mb-4">
+                        <div class="service-card card h-100" data-readable>
+                            <div class="card-body">
+                                <h3><i class="fas fa-tools me-2"></i>صيانة ملاعب الجولف</h3>
+                                <ul>
+                                    <li>صيانة المرافق والمنشآت</li>
+                                    <li>تنظيف الأرضيات والمساحات الخضراء</li>
+                                    <li>إصلاح المعدات</li>
+                                    <li>خدمات دعم مستمرة</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Footer -->
+            <footer class="footer bg-dark text-white py-4 mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6" data-readable>
+                        </div>
+    <!-- Packages Section -->
+    <section id="packages" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">عروضنا</h2>
+            <div class="row">
+                <!-- Basic Package -->
+                <div class="col-md-3 mb-4">
+                    <div class="card package-card h-100">
+                        <div class="card-header text-center">
+                            <h3>خصم 20% على الإقامة الطويلة</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i>احجز 5 ليالٍ أو أكثر واحصل على خصم خاص </li>
+                                <li><i class="fas fa-check text-success"></i> يشمل إفطار مجاني يومي</li>
+                                <li><i class="fas fa-check text-success"></i>إمكانية تسجيل الوصول المبكر والمغادرة المتأخرة (حسب التوافر). </li>
+                         
+                            </ul>
+                            <button class="btn btn-primary w-100">طلب عرض سعر</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Standard Package -->
+                <div class="col-md-3 mb-4">
+                    <div class="card package-card h-100">
+                        <div class="card-header text-center">
+                            <h3>باقة الجولف الفاخرة</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i>إقامة في غرفة فاخرة مع إطلالة رائعة</li>
+                                <li><i class="fas fa-check text-success"></i> دخول مجاني إلى ملعب الجولف يوميًا.</li>
+                                <li><i class="fas fa-check text-success"></i>خصومات على دروس الجولف الخاصة </li>
+                                
+                            </ul>
+                            <button class="btn btn-primary w-100">طلب عرض سعر</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Advanced Package -->
+                <div class="col-md-3 mb-4">
+                    <div class="card package-card h-100 featured">
+                        <div class="card-header text-center">
+                            <h3>إقامة + جولة سياحية</h3>
+                            <span class="badge bg-primary">الأكثر طلباً</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i>احجز 3 ليالٍ أو أكثر واحصل على جولة مجانية في أجمل معالم البرتغال </li>
+                                <li><i class="fas fa-check text-success"></i>النقل من وإلى الفندق متوفر</li>
+                                <li><i class="fas fa-check text-success"></i> دليل سياحي محترف مع جولة مخصصة حسب الطلب</li>
+                               
+                            <button class="btn btn-primary w-100">طلب عرض سعر</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Custom Package -->
+                <div class="col-md-3 mb-4">
+                    <div class="card package-card h-100">
+                        <div class="card-header text-center">
+                            <h3>عرض الأزواج الرومانسي</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-center">نقدم حلولاً مخصصة حسب احتياجاتك الأمنية</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i> إقامة لشخصين في جناح فاخر.</li>
+                                <li><i class="fas fa-check text-success"></i>تجربة جولف خاصة للأزواج مع درس تدريبي مجاني </li>
+                                <li><i class="fas fa-check text-success"></i>عشاء فاخر لشخصين في مطعم الفندق </li>
+                            </ul>
+                            <button class="btn btn-primary w-100">طلب عرض السعر</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+            <h2 class="text-center mb-5">منتجاتنا</h2>
+            <div class="row">
+                <!-- CCTV Cameras -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card">
+                        <img src="EMAGE/جولف.png" class="card-img-top" alt="مضارب القولف">
+                        <div class="card-body">
+                            <h3>معدات الجولف</h3>
+                            <div class="specs">
+                                <p><i class="fas fa-check"></i>مضارب جولف </p>
+                                <p><i class="fas fa-check"></i>كرات جولف احترافية</p>
+                                <p><i class="fas fa-check"></i> حقائب جولف بأحجام وتصاميم مختلفة</p>
+                                <p><i class="fas fa-check"></i>قفازات جولف مريحة وعالية الجودة</p>
+                            </div>
+                            <div class="price">
+                                <span class="amount">120 دولار</span>
+                                <span class="unit">/لكامل المعدات</span>
+                            </div>
+                            <button class="btn btn-primary w-100">اطلب الآن</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Alarm System -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card">
+                        <img src="EMAGE/3-72.png" class="card-img-top" alt="إكسسوارات الجولف">
+                        <div class="card-body">
+                            <h3>إكسسوارات الجولف</h3>
+                            <div class="specs">
+                                <p><i class="fas fa-check"></i>نظارات شمسية رياضية </p>
+                                <p><i class="fas fa-check"></i> أحزمة دعم الظهر والركبة</p>
+                                <p><i class="fas fa-check"></i> نظارات شمسية رياضية</p>
+                                
+                            </div>
+                            <div class="price">
+                                <span class="amount">60 دولار</span>
+                                <span class="unit">/ للعرض كامل</span>
+                            </div>
+                            <button class="btn btn-primary w-100">اطلب الآن</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Access Control -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card">
+                        <img src="EMAGE/Screenshot 2025-03-04 095117.png" class="card-img-top" alt="هدايا وتذكارات الجولف">
+                        <div class="card-body">
+                            <h3>هدايا وتذكارات الجولف</h3>
+                            <div class="specs">
+                                <p><i class="fas fa-check"></i>
+                                    مجسمات وديكورات لعشاق الجولف </p>
+                                <p><i class="fas fa-check"></i> كرات جولف مخصصة بأسماء أو شعارات</p>
+                                <p><i class="fas fa-check"></i>حجوزات بطولات الجولف العالمية والمحلية </p>
+                                <p><i class="fas fa-check"></i>باقات VIP لمتابعة البطولات من أماكن مميزة</p>
+                            </div>
+                            <div class="price">
+                                <span class="amount">300 دولار</span>
+                                <span class="unit">للتذكره مع مجسم تذكاري</span>
+                            </div>
+                            <button class="btn btn-primary w-100">اطلب الآن</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">اتصل بنا</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-info mb-4" data-readable>
+                        <h3>معلومات الاتصال</h3>
+                        <p>
+                            <i class="fas fa-map-marker-alt me-2"></i> العنوان: اسبانيا- البرتغال<br>
+                            <i class="fas fa-mobile-alt me-2"></i> موبايل:+351 912 345 678 <br>
+                            <i class="fas fa-envelope me-2"></i> البريد الإلكتروني: lunasharaf15@gmail.com
+                        </p>
+                        <div class="working-hours mt-4" data-readable>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <h3 class="mb-4">حجز موعد للتقييم والتخطيط</h3>
+                        <form id="appointmentForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">الاسم الكامل</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">رقم الجوال</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" 
+                                    pattern="[0-9]{10}" 
+                                    placeholder="مثال: 0770997708"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">البريد الإلكتروني</label>
+                                <input type="email" class="form-control" id="email" name="email" 
+                                    placeholder="engfaten1111@gmail.com"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="serviceType" class="form-label">نوع الخدمة المطلوبة</label>
+                                <select class="form-select" id="serviceType" name="serviceType" required>
+                                    <option value="">اختر الخدمة</option>
+                                    <option value="security-assessment"> خصم 20% على الإقامة الطويلة</option>
+                                    <option value="installation">باقة الجولف الفاخره </option>
+                                    <option value="maintenance">اقامه + جوله سياحية</option>
+                                    <option value="monitoring">عرض الزواج الرومانسي</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="preferredDate" class="form-label">التاريخ المفضل للزيارة</label>
+                                <input type="date" class="form-control" id="preferredDate" name="preferredDate" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="preferredTime" class="form-label">الوقت المفضل</label>
+                                <select class="form-select" id="preferredTime" name="preferredTime" required>
+                                    <option value="">اختر الوقت</option>
+                                    <option value="morning">صباحاً (7:00 - 12:00)</option>
+                                    <option value="afternoon">ظهراً (12:30 - 3:00)</option>
+                                    <option value="evening">مساءً (3:30 - 11:00)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="notes" class="form-label">ملاحظات إضافية</label>
+                                <textarea class="form-control" id="notes" name="notes" rows="3"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-calendar-check me-2"></i>
+                                    طلب موعد
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Survey Modal -->
+    <div class="modal fade" id="surveyModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">استبيان تحسين خدماتنا</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              
+                </div>
+                <div class="modal-body">
+                    <form id="surveyForm">
+                        <div class="mb-3">
+                            <label class="form-label">ما مدى رضاك عن موقعنا؟</label>
+                            <div class="rating">
+                                <input type="radio" name="satisfaction" value="5" id="star5"><label for="star5">★</label>
+                                <input type="radio" name="satisfaction" value="4" id="star4"><label for="star4">★</label>
+                                <input type="radio" name="satisfaction" value="3" id="star3"><label for="star3">★</label>
+                                <input type="radio" name="satisfaction" value="2" id="star2"><label for="star2">★</label>
+                                <input type="radio" name="satisfaction" value="1" id="star1"><label for="star1">★</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">ما هي الخدمات التي تهمك أكثر؟</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="cameras" id="service1">
+                                <label class="form-check-label" for="service1">خصم 20% على الاقامه الطويله</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="alarms" id="service2">
+                                <label class="form-check-label" for="service2">باقة القولف الفاخرة</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="access" id="service3">
+                                <label class="form-check-label" for="service3">اقامه + جوله سياحية</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="access" id="service3">
+                                <label class="form-check-label" for="service3">عرض  الازواج الرومانسي</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">كيف يمكننا تحسين خدماتنا؟</label>
+                            <textarea class="form-control" rows="3" name="suggestions"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                    <button type="button" class="btn btn-primary" id="submitSurvey">إرسال</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="accessibility-btn" onclick="toggleVisuallyImpairedMode()">👁</button>
+
+    <!-- Feedback Button -->
+    <button class="feedback-btn" data-bs-toggle="modal" data-bs-target="#surveyModal">
+        <i class="fas fa-comments"></i> شاركنا رأيك
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" data-readable>
+                    <h5>تواصل معنا</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt me-2"></i> العنوان:اسبانيا _البرتغال<br>
+                        <i class="fas fa-mobile-alt me-2"></i> موبايل:+351 912 345 678<br>
+                        <i class="fas fa-envelope me-2"></i> البريد الإلكتروني: lunasharaf15@gmail.com
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>جميع الحقوق محفوظة &copy; 2025 LUNA GOLF</p>
+                    <p class="mb-0">
+                        <small>عدد الزيارات: <span id="visit-counter">0</span></small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
